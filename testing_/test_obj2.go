@@ -19,7 +19,7 @@
 
 package testing_
 
-import "github.com/mindstand/gogm/v2"
+import "github.com/ohbonsai/gogm/v2"
 
 type ExampleObject2 struct {
 	gogm.BaseUUIDNode

@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/mindstand/gogm/v2"
+	"github.com/ohbonsai/gogm/v2"
 	"reflect"
 	"time"
 )

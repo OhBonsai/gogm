@@ -1,10 +1,10 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/mindstand/gogm)](https://goreportcard.com/report/github.com/mindstand/gogm)
-[![Actions Status](https://github.com/mindstand/gogm/workflows/Go/badge.svg)](https://github.com/mindstand/gogm/actions)
-[![GoDoc](https://godoc.org/github.com/mindstand/gogm?status.svg)](https://godoc.org/github.com/mindstand/gogm)
+[![Go Report Card](https://goreportcard.com/badge/github.com/ohbonsai/gogm)](https://goreportcard.com/report/github.com/ohbonsai/gogm)
+[![Actions Status](https://github.com/ohbonsai/gogm/workflows/Go/badge.svg)](https://github.com/ohbonsai/gogm/actions)
+[![GoDoc](https://godoc.org/github.com/ohbonsai/gogm?status.svg)](https://godoc.org/github.com/ohbonsai/gogm)
 # GoGM Golang Object Graph Mapper v2
 
 ```
-go get -u github.com/mindstand/gogm/v2
+go get -u github.com/ohbonsai/gogm/v2
 ```
 
 ## Features
@@ -91,12 +91,12 @@ type MyNeo4jObject struct {
 ```
 
 ### GOGM Usage
-- Edges must implement the [Edge interface](https://github.com/mindstand/gogm/blob/master/interface.go#L28). View the complete example [here](https://github.com/mindstand/gogm/blob/master/examples/example.go). 
+- Edges must implement the [Edge interface](https://github.com/ohbonsai/gogm/blob/master/interface.go#L28). View the complete example [here](https://github.com/ohbonsai/gogm/blob/master/examples/example.go). 
 ```go
 package main
 
 import (
-	"github.com/mindstand/gogm/v2"
+	"github.com/ohbonsai/gogm/v2"
 	"time"
 )
 
@@ -285,7 +285,7 @@ sess, err := gogm.G().NewSessionV2(gogm.SessionConfig{AccessMode: gogm.AccessMod
 
 ## CLI Installation
 ```
-go get -u github.com/mindstand/gogm/v2/cli/gogmcli
+go get -u github.com/ohbonsai/gogm/v2/cli/gogmcli
 ```
 
 ## CLI Usage

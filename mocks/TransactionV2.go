@@ -6,7 +6,7 @@ import (
 	context "context"
 
 	go_cypherdsl "github.com/mindstand/go-cypherdsl"
-	gogm "github.com/mindstand/gogm/v2"
+	gogm "github.com/ohbonsai/gogm/v2"
 
 	mock "github.com/stretchr/testify/mock"
 

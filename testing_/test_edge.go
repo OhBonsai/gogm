@@ -20,7 +20,7 @@
 package testing_
 
 import (
-	"github.com/mindstand/gogm/v2"
+	"github.com/ohbonsai/gogm/v2"
 	"reflect"
 )
 

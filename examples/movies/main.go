@@ -2,9 +2,9 @@ package main
 
 import (
 	"context"
-	"github.com/mindstand/gogm/v2"
-	"github.com/mindstand/gogm/v2/examples/movies/api"
-	"github.com/mindstand/gogm/v2/examples/movies/domain"
+	"github.com/ohbonsai/gogm/v2"
+	"github.com/ohbonsai/gogm/v2/examples/movies/api"
+	"github.com/ohbonsai/gogm/v2/examples/movies/domain"
 	"net/http"
 )
 

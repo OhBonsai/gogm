@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/gorilla/mux"
-	"github.com/mindstand/gogm/v2"
-	"github.com/mindstand/gogm/v2/examples/movies/domain"
+	"github.com/ohbonsai/gogm/v2"
+	"github.com/ohbonsai/gogm/v2/examples/movies/domain"
 	"net/http"
 )
 

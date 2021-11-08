@@ -23,7 +23,7 @@ import (
 	"bytes"
 	"errors"
 	go_cypherdsl "github.com/mindstand/go-cypherdsl"
-	"github.com/mindstand/gogm/v2/cmd/gogmcli/util"
+	"github.com/ohbonsai/gogm/v2/cmd/gogmcli/util"
 	"go/ast"
 	"go/parser"
 	"go/printer"
