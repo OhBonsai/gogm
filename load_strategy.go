@@ -51,7 +51,7 @@ func PathLoadStrategyMany(variable, label string, depth int, additionalConstrain
 
 	path := dsl.Path().
 		P().
-		V(dsl.V{Name: variable})
+		V(dsl.V{Name: variable, Type: label})
 
 	if depth != 0 {
 		path = path.
