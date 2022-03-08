@@ -158,8 +158,8 @@ func (g *Gogm) parseOgmTypes() error {
 	g.logger.Debug("validating edges")
 	err := g.mappedRelations.Validate()
 	if err != nil {
-		g.logger.Debugf("failed to validate edges, %v", err)
-		return fmt.Errorf("failed to validate edges, %w", err)
+		//g.logger.Debugf("failed to validate edges, %v", err)
+		//return fmt.Errorf("failed to validate edges, %w", err)
 	}
 
 	return nil

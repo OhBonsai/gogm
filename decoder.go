@@ -490,9 +490,11 @@ var emptyInterfaceType = reflect.TypeOf(sliceOfEmptyInterface).Elem()
 
 // convertToValue converts properties map from neo4j to golang reflect value
 func convertToValue(gogm *Gogm, graphId int64, conf structDecoratorConfig, props map[string]interface{}, rtype reflect.Type) (valss *reflect.Value, err error) {
+	currentFieldConfig := &decoratorConfig{}
+
 	defer func() {
 		if r := recover(); r != nil {
-			err = fmt.Errorf("%v", r)
+			err = fmt.Errorf("gogm convert %s field %s err: %v", rtype.Name(), currentFieldConfig.Name, r)
 		}
 	}()
 
@@ -513,6 +515,8 @@ func convertToValue(gogm *Gogm, graphId int64, conf structDecoratorConfig, props
 	}
 
 	for field, fieldConfig := range conf.Fields {
+		currentFieldConfig = &fieldConfig
+
 		if fieldConfig.Name == "id" {
 			continue //id is handled above
 		}
