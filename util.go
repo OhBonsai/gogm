@@ -329,7 +329,7 @@ func (r *relationConfigs) Validate() error {
 		}
 	}
 
-	for relType, validateConfig := range checkMap {
+	for _, validateConfig := range checkMap {
 		//check normal
 		if len(validateConfig.Outgoing) != len(validateConfig.Incoming) {
 			//return fmt.Errorf("invalid directional configuration on relationship [%s], %w", relType, ErrValidation)
